@@ -1,0 +1,55 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package codsoft;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author DELL
+ */
+public class task2 {
+    public static void main(String args[]){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Welcome to grade Calculator");
+        System.out.println("Please enter your grades out of a 100");
+        
+        int grade1 = scanner.nextInt();
+        int grade2 = scanner.nextInt();
+        int grade3 = scanner.nextInt();
+        int grade4 = scanner.nextInt();
+        int grade5 = scanner.nextInt();
+        
+        float total=(grade1+grade2+grade3+grade4+grade5);
+        
+        
+        float avp=(grade1+grade2+grade3+grade4+grade5)/5;
+        
+        String grade;
+        if (avp >= 90) {
+            grade = "A+";
+        } else if (avp >= 80) {
+            grade = "A";
+        } else if (avp >= 70) {
+            grade = "B";
+        } else if (avp >= 60) {
+            grade = "C";
+        } else if (avp >= 50) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+        System.out.println("Total marks"+total);
+        System.out.println("Average Grade"+avp);
+        System.out.println("Grade according to percetnage  "+grade);
+
+       
+
+        scanner.close();
+    }
+}
+
+
